@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Registration — DVRCS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="loading-screen"><div class="loading-mark"></div><span>LOADING COORDINATION PORTAL…</span></div>
+<div class="ops-strip"><div class="ops-strip__track" id="opsStrip"></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS<small>Disaster Coordination Portal</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="zones.html">Disaster Zones</a>
+      <a href="resources.html">Resources</a>
+      <a href="dashboard.html">Volunteers</a>
+      <a href="sos.html">SOS Center</a>
+      <a href="operations.html">Operations</a>
+      <a href="project-management.html">Program</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="register.html" class="btn btn-primary btn-sm">Register as Volunteer</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Volunteer Onboarding</span>
+      <h1>Register as a Disaster Response Volunteer</h1>
+      <p>Your profile is matched against active disaster zones by skill, location and availability. Verified volunteers are contacted within 24 hours of an assignment match.</p>
+    </div>
+  </div>
+
+  <section class="section" style="max-width:780px;margin-inline:auto;">
+    <div class="container" style="max-width:100%">
+
+      <div class="card" style="padding:36px;" id="formCard">
+        <form id="regForm" novalidate>
+
+          <h3 class="mt-8">Personal Details</h3>
+          <div class="field-row mt-24">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="e.g. Ananya Sharma">
+              <div class="field-error">Please enter your full name.</div>
+            </div>
+            <div class="field">
+              <label for="age">Age <span class="hint">18–65</span></label>
+              <input type="number" id="age" placeholder="e.g. 27" min="18" max="65">
+              <div class="field-error">Enter a valid age between 18 and 65.</div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="">Select gender</option>
+                <option>Male</option><option>Female</option><option>Other</option>
+              </select>
+              <div class="field-error">Please select a gender.</div>
+            </div>
+            <div class="field">
+              <label for="bloodGroup">Blood Group</label>
+              <select id="bloodGroup">
+                <option value="">Select blood group</option>
+                <option>O+</option><option>O-</option><option>A+</option><option>A-</option>
+                <option>B+</option><option>B-</option><option>AB+</option><option>AB-</option>
+              </select>
+              <div class="field-error">Please select a blood group.</div>
+            </div>
+          </div>
+
+          <h3 class="mt-32">Contact Information</h3>
+          <div class="field-row mt-24">
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="10-digit mobile number">
+              <div class="field-error">Enter a valid 10-digit phone number.</div>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com">
+              <div class="field-error">Enter a valid email address.</div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="state">State</label>
+              <input type="text" id="state" placeholder="e.g. Assam">
+              <div class="field-error">Please enter your state.</div>
+            </div>
+            <div class="field">
+              <label for="district">District</label>
+              <input type="text" id="district" placeholder="e.g. Golaghat">
+              <div class="field-error">Please enter your district.</div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="emergencyContact">Emergency Contact <span class="hint">name &amp; phone</span></label>
+            <input type="text" id="emergencyContact" placeholder="e.g. Raj Sharma — 9876543210">
+            <div class="field-error">Please provide an emergency contact.</div>
+          </div>
+
+          <h3 class="mt-32">Skills &amp; Capability</h3>
+          <div class="field mt-24">
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" placeholder="e.g. Medical Aid, Swimming, Logistics">
+            <div class="field-error">Please list at least one skill.</div>
+          </div>
+          <div class="field">
+            <label>Medical Training</label>
+            <div class="chip-group" id="medicalGroup">
+              <button type="button" class="chip" data-value="Yes">Yes</button>
+              <button type="button" class="chip" data-value="No">No</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="languages">Languages Known</label>
+            <input type="text" id="languages" placeholder="e.g. Hindi, Assamese, English">
+            <div class="field-error">Please list at least one language.</div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label>Vehicle Availability</label>
+              <div class="chip-group" id="vehicleGroup">
+                <button type="button" class="chip" data-value="Yes">Yes</button>
+                <button type="button" class="chip" data-value="No">No</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="availability">Availability</label>
+              <select id="availability">
+                <option value="">Select availability</option>
+                <option>Full-time</option><option>Weekends</option><option>On-call</option>
+              </select>
+              <div class="field-error">Please select your availability.</div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="prevExperience">Previous Experience <span class="hint">optional</span></label>
+            <textarea id="prevExperience" rows="3" placeholder="e.g. Assisted in 2023 Assam flood relief camp"></textarea>
+          </div>
+          <div class="field">
+            <label>Preferred Disaster Type</label>
+            <div class="chip-group" id="disasterGroup">
+              <button type="button" class="chip" data-value="Flood">Flood</button>
+              <button type="button" class="chip" data-value="Cyclone">Cyclone</button>
+              <button type="button" class="chip" data-value="Earthquake">Earthquake</button>
+              <button type="button" class="chip" data-value="Fire">Fire</button>
+              <button type="button" class="chip" data-value="Landslide">Landslide</button>
+              <button type="button" class="chip" data-value="Heatwave">Heatwave</button>
+            </div>
+            <div class="field-error" id="disasterError">Please select at least one preference.</div>
+          </div>
+
+          <label class="check-row mt-32">
+            <input type="checkbox" id="terms">
+            <span>I confirm the details above are accurate and I agree to be contacted for volunteer deployment during active disaster operations.</span>
+          </label>
+          <div class="field-error" id="termsError">You must accept the terms to register.</div>
+
+          <button type="submit" class="btn btn-primary btn-block mt-32">Submit Registration</button>
+        </form>
+      </div>
+
+      <div class="card text-center" id="successCard" style="padding:56px 36px;display:none;">
+        <div class="success-check"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+        <h2>Registration Successful</h2>
+        <p class="muted mt-8">Your volunteer profile has been added to the coordination grid. You'll be notified when matched to an active zone.</p>
+        <a href="dashboard.html" class="btn btn-primary mt-24">View Volunteer Dashboard</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="brand" style="color:var(--white);margin-bottom:14px;"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS</span></div><p>A unified coordination grid for volunteer deployment and disaster relief operations across India.</p></div>
+      <div><h4>Console</h4><ul><li><a href="zones.html">Disaster Zones</a></li><li><a href="resources.html">Resources</a></li><li><a href="dashboard.html">Volunteer Dashboard</a></li><li><a href="sos.html">SOS Center</a></li></ul></div>
+      <div><h4>Program</h4><ul><li><a href="operations.html">Operations Timeline</a></li><li><a href="project-management.html">Roadmap &amp; Sprints</a></li></ul></div>
+      <div><h4>Emergency Line</h4><ul><li>National Helpline: 1078</li><li>NDRF Control Room: 011-24363260</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Disaster Volunteer Registration &amp; Coordination System</span><span>Built for rapid relief coordination</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/utils.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations Timeline — DVRCS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="loading-screen"><div class="loading-mark"></div><span>LOADING COORDINATION PORTAL…</span></div>
+<div class="ops-strip"><div class="ops-strip__track" id="opsStrip"></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS<small>Disaster Coordination Portal</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="zones.html">Disaster Zones</a>
+      <a href="resources.html">Resources</a>
+      <a href="dashboard.html">Volunteers</a>
+      <a href="sos.html">SOS Center</a>
+      <a href="operations.html" class="active">Operations</a>
+      <a href="project-management.html">Program</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="register.html" class="btn btn-primary btn-sm">Register as Volunteer</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Standard Response Protocol</span>
+      <h1>Operations Timeline</h1>
+      <p>The eight-stage protocol every disaster zone moves through, from first alert to full recovery.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="max-width:760px;">
+      <div class="timeline">
+
+        <div class="timeline-step done reveal">
+          <div class="timeline-dot">✓</div>
+          <div class="card timeline-card"><h3>1. Alert</h3><p>Disaster signal received from IMD, NDMA or ground reporting network and logged into the grid.</p><div class="meta">Kaziranga Belt · Puri Coastal Strip · Bhuj Fault Line</div></div>
+        </div>
+
+        <div class="timeline-step done reveal reveal-1">
+          <div class="timeline-dot">✓</div>
+          <div class="card timeline-card"><h3>2. Assessment</h3><p>Rapid severity scoring, affected population estimate and required resource profile generated.</p><div class="meta">Severity confirmed within 45 minutes on average</div></div>
+        </div>
+
+        <div class="timeline-step done reveal reveal-2">
+          <div class="timeline-dot">✓</div>
+          <div class="card timeline-card"><h3>3. Volunteer Assignment</h3><p>Matched volunteers notified by skill, proximity and availability; assignment confirmed on the dashboard.</p><div class="meta">27–31 volunteers deployed per critical zone</div></div>
+        </div>
+
+        <div class="timeline-step active reveal reveal-3">
+          <div class="timeline-dot">●</div>
+          <div class="card timeline-card"><h3>4. Resource Dispatch</h3><p>Relief kits, medical supplies and rescue equipment routed from the nearest depot to the zone.</p><div class="meta">In progress — Puri Coastal Strip, Bandipur Range</div></div>
+        </div>
+
+        <div class="timeline-step reveal reveal-4">
+          <div class="timeline-dot">5</div>
+          <div class="card timeline-card"><h3>5. Rescue</h3><p>On-ground extraction and evacuation of affected people to designated safe zones.</p></div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot">6</div>
+          <div class="card timeline-card"><h3>6. Medical Support</h3><p>Triage, first aid and hospital referral for injuries sustained during the disaster event.</p></div>
+        </div>
+
+        <div class="timeline-step reveal reveal-1">
+          <div class="timeline-dot">7</div>
+          <div class="card timeline-card"><h3>7. Recovery</h3><p>Rehabilitation support, shelter transition and resource wind-down as the zone stabilises.</p></div>
+        </div>
+
+        <div class="timeline-step reveal reveal-2">
+          <div class="timeline-dot">8</div>
+          <div class="card timeline-card"><h3>8. Completed</h3><p>Zone closed on the grid; volunteers released back to the available pool for the next deployment.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="brand" style="color:var(--white);margin-bottom:14px;"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS</span></div><p>A unified coordination grid for volunteer deployment and disaster relief operations across India.</p></div>
+      <div><h4>Console</h4><ul><li><a href="zones.html">Disaster Zones</a></li><li><a href="resources.html">Resources</a></li><li><a href="dashboard.html">Volunteer Dashboard</a></li><li><a href="sos.html">SOS Center</a></li></ul></div>
+      <div><h4>Program</h4><ul><li><a href="operations.html">Operations Timeline</a></li><li><a href="project-management.html">Roadmap &amp; Sprints</a></li></ul></div>
+      <div><h4>Emergency Line</h4><ul><li>National Helpline: 1078</li><li>NDRF Control Room: 011-24363260</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Disaster Volunteer Registration &amp; Coordination System</span><span>Built for rapid relief coordination</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/utils.js"></script>
+</body>
+</html>

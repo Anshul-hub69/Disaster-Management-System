@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program &amp; Roadmap — DVRCS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="loading-screen"><div class="loading-mark"></div><span>LOADING COORDINATION PORTAL…</span></div>
+<div class="ops-strip"><div class="ops-strip__track" id="opsStrip"></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS<small>Disaster Coordination Portal</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="zones.html">Disaster Zones</a>
+      <a href="resources.html">Resources</a>
+      <a href="dashboard.html">Volunteers</a>
+      <a href="sos.html">SOS Center</a>
+      <a href="operations.html">Operations</a>
+      <a href="project-management.html" class="active">Program</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="register.html" class="btn btn-primary btn-sm">Register as Volunteer</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Engineering Program</span>
+      <h1>Roadmap &amp; Sprint Coordination</h1>
+      <p>How DVRCS itself is built — Program Increment planning, sprint workflow and the squads shipping this platform.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Release Roadmap</span><h2>Program Increment Planning</h2><p>Three Program Increments define the build sequence, from volunteer intake through full disaster coordination.</p></div>
+      <div class="pi-track">
+        <div class="card pi-card reveal">
+          <span class="pi-card__num">PI-1 · Shipped</span>
+          <h3>Volunteer Registration</h3>
+          <ul><li>Registration form &amp; validation</li><li>LocalStorage volunteer schema</li><li>Success &amp; toast feedback flow</li></ul>
+        </div>
+        <div class="card pi-card reveal reveal-1">
+          <span class="pi-card__num">PI-2 · In Progress</span>
+          <h3>Zone Assignment</h3>
+          <ul><li>Disaster zone grid &amp; severity model</li><li>Volunteer-to-zone matching</li><li>Live progress tracking</li></ul>
+        </div>
+        <div class="card pi-card reveal reveal-2">
+          <span class="pi-card__num">PI-3 · Planned</span>
+          <h3>Resource Tracking + SOS</h3>
+          <ul><li>Resource inventory dashboard</li><li>SOS intake &amp; dispatch workflow</li><li>Cross-zone reporting</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Jira Workflow</span><h2>Issue lifecycle across squads</h2></div>
+      <div class="kanban">
+        <div class="kanban-col reveal">
+          <div class="kanban-col__head"><h4>Backlog</h4><span class="kanban-count">6</span></div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-sos">SOS</span>Auto-escalate unresolved requests past 2 hours</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-resource">Resource</span>Low-stock alert threshold config</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-epic">Epic</span>Offline-first sync for field teams</div>
+        </div>
+        <div class="kanban-col reveal reveal-1">
+          <div class="kanban-col__head"><h4>Selected</h4><span class="kanban-count">4</span></div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-zone">Zone</span>Zone severity recalculation logic</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-volunteer">Volunteer</span>Bulk status update action</div>
+        </div>
+        <div class="kanban-col reveal reveal-2">
+          <div class="kanban-col__head"><h4>In Progress</h4><span class="kanban-count">3</span></div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-story">Story</span>Interactive zone map pin animation</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-bug">Bug</span>Progress bar mis-renders on filter change</div>
+        </div>
+        <div class="kanban-col reveal reveal-3">
+          <div class="kanban-col__head"><h4>Testing</h4><span class="kanban-count">2</span></div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-task">Task</span>Cross-browser check on mobile drawer</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-volunteer">Volunteer</span>Registration form validation edge cases</div>
+        </div>
+        <div class="kanban-col reveal reveal-4">
+          <div class="kanban-col__head"><h4>Done</h4><span class="kanban-count">8</span></div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-story">Story</span>Volunteer dashboard CRUD actions</div>
+          <div class="kanban-card"><span class="kanban-card__tag tag-resource">Resource</span>Animated progress bar component</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Delivery Teams</span><h2>Scrum Squads</h2></div>
+      <div class="grid grid-2">
+        <div class="card squad-card reveal">
+          <h3>Registration Squad</h3>
+          <p class="muted mt-8">Owns volunteer intake, validation and the onboarding experience.</p>
+          <div class="squad-tags"><span>4 Engineers</span><span>1 Designer</span><span>Velocity: 38 pts</span></div>
+        </div>
+        <div class="card squad-card reveal reveal-1">
+          <h3>Operations Squad</h3>
+          <p class="muted mt-8">Owns zone coordination, resource tracking and SOS dispatch logic.</p>
+          <div class="squad-tags"><span>5 Engineers</span><span>1 Designer</span><span>Velocity: 44 pts</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Ways of Working</span><h2>Agile Practices</h2></div>
+      <div class="practice-list">
+        <div class="card practice-item reveal"><span class="dot"></span><div><h4>Async Daily Standups</h4><p>Posted by 10 AM IST for cross-timezone visibility.</p></div></div>
+        <div class="card practice-item reveal reveal-1"><span class="dot"></span><div><h4>Sprint Reviews</h4><p>Bi-weekly demo of shipped increments to stakeholders.</p></div></div>
+        <div class="card practice-item reveal reveal-2"><span class="dot"></span><div><h4>Retrospectives</h4><p>End-of-sprint reflection on what to keep, drop or try.</p></div></div>
+        <div class="card practice-item reveal reveal-3"><span class="dot"></span><div><h4>Backlog Grooming</h4><p>Weekly refinement to keep the backlog estimation-ready.</p></div></div>
+        <div class="card practice-item reveal reveal-4"><span class="dot"></span><div><h4>Planning Poker</h4><p>Story points estimated collaboratively before sprint commit.</p></div></div>
+        <div class="card practice-item reveal"><span class="dot"></span><div><h4>Time-zone Overlap</h4><p>Two-hour daily overlap window for the distributed squads.</p></div></div>
+        <div class="card practice-item reveal reveal-1"><span class="dot"></span><div><h4>Sprint Velocity</h4><p>Tracked per squad to calibrate future PI capacity.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="brand" style="color:var(--white);margin-bottom:14px;"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS</span></div><p>A unified coordination grid for volunteer deployment and disaster relief operations across India.</p></div>
+      <div><h4>Console</h4><ul><li><a href="zones.html">Disaster Zones</a></li><li><a href="resources.html">Resources</a></li><li><a href="dashboard.html">Volunteer Dashboard</a></li><li><a href="sos.html">SOS Center</a></li></ul></div>
+      <div><h4>Program</h4><ul><li><a href="operations.html">Operations Timeline</a></li><li><a href="project-management.html">Roadmap &amp; Sprints</a></li></ul></div>
+      <div><h4>Emergency Line</h4><ul><li>National Helpline: 1078</li><li>NDRF Control Room: 011-24363260</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Disaster Volunteer Registration &amp; Coordination System</span><span>Built for rapid relief coordination</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/utils.js"></script>
+</body>
+</html>

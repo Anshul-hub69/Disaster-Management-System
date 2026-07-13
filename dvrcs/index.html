@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DVRCS — Disaster Volunteer Registration &amp; Coordination System</title>
+<meta name="description" content="National platform coordinating volunteer deployment, relief resources and emergency response across active disaster zones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="loading-screen"><div class="loading-mark"></div><span>LOADING COORDINATION PORTAL…</span></div>
+
+<div class="ops-strip"><div class="ops-strip__track" id="opsStrip"></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS<small>Disaster Coordination Portal</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="zones.html">Disaster Zones</a>
+      <a href="resources.html">Resources</a>
+      <a href="dashboard.html">Volunteers</a>
+      <a href="sos.html">SOS Center</a>
+      <a href="operations.html">Operations</a>
+      <a href="project-management.html">Program</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="register.html" class="btn btn-primary btn-sm">Register as Volunteer</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">National Emergency Coordination Network</span>
+        <h1>Connecting <em>volunteers</em>.<br>Coordinating relief.<br>Saving lives.</h1>
+        <p class="lead">DVRCS links trained volunteers, disaster zones and relief resources on one operational grid — so response teams can assign, dispatch and track every mission in real time.</p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-primary">Register as Volunteer</a>
+          <a href="zones.html" class="btn btn-outline">View Active Zones</a>
+        </div>
+      </div>
+      <div class="hero-panel reveal reveal-2">
+        <div class="hero-panel__title">● Live Grid Snapshot</div>
+        <div class="hero-panel__grid">
+          <div class="hero-stat"><div class="num" data-counter="6">0</div><div class="label">Active Disaster Zones</div></div>
+          <div class="hero-stat"><div class="num" data-counter="8">0</div><div class="label">Registered Volunteers</div></div>
+          <div class="hero-stat"><div class="num" data-counter="2">0</div><div class="label">Pending SOS Requests</div></div>
+          <div class="hero-stat"><div class="num" data-counter="97">0</div><div class="label">Missions Completed</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stat-band">
+    <div class="container grid grid-4">
+      <div class="stat-card reveal"><div class="num" data-counter="12480">0</div><div class="label">People Aided This Year</div></div>
+      <div class="stat-card reveal reveal-1"><div class="num" data-counter="340">0</div><div class="label">Relief Kits Dispatched</div></div>
+      <div class="stat-card reveal reveal-2"><div class="num" data-counter="52">0</div><div class="label">Partner NGOs</div></div>
+      <div class="stat-card reveal reveal-3"><div class="num" data-counter="24">0</div><div class="label">States Covered</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Disaster Categories</span>
+        <h2>Six response tracks, one command grid</h2>
+        <p>Every category maps to a dedicated response protocol — resourcing, volunteer skillsets and escalation paths are pre-configured for each.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card card-hover icon-card reveal"><div class="icon-card__icon"><span class="material-symbols-outlined">flood</span></div><h3>Flood</h3><p>River overflow &amp; urban waterlogging response with boat-based rescue.</p></div>
+        <div class="card card-hover icon-card reveal reveal-1"><div class="icon-card__icon"><span class="material-symbols-outlined">cyclone</span></div><h3>Cyclone</h3><p>Coastal evacuation, shelter management and post-landfall relief.</p></div>
+        <div class="card card-hover icon-card reveal reveal-2"><div class="icon-card__icon"><span class="material-symbols-outlined">earthquake</span></div><h3>Earthquake</h3><p>Structural search-and-rescue and rapid medical triage.</p></div>
+        <div class="card card-hover icon-card reveal reveal-3"><div class="icon-card__icon"><span class="material-symbols-outlined">whatshot</span></div><h3>Fire</h3><p>Forest and settlement fire containment with rapid water dispatch.</p></div>
+        <div class="card card-hover icon-card reveal reveal-4"><div class="icon-card__icon"><span class="material-symbols-outlined">landslide</span></div><h3>Landslide</h3><p>Slope-zone evacuation and debris-clearance coordination.</p></div>
+        <div class="card card-hover icon-card reveal"><div class="icon-card__icon"><span class="material-symbols-outlined">thermostat</span></div><h3>Heatwave</h3><p>Public health advisories and hydration point deployment.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Quick Navigation</span>
+        <h2>Get to the right console, fast</h2>
+      </div>
+      <div class="grid grid-4">
+        <a href="zones.html" class="card card-hover icon-card reveal"><div class="icon-card__icon"><span class="material-symbols-outlined">map</span></div><h3>Disaster Zones</h3><p>Track severity, assignments and status by zone.</p></a>
+        <a href="resources.html" class="card card-hover icon-card reveal reveal-1"><div class="icon-card__icon"><span class="material-symbols-outlined">inventory_2</span></div><h3>Resource Tracking</h3><p>Live inventory of relief material across the network.</p></a>
+        <a href="sos.html" class="card card-hover icon-card reveal reveal-2"><div class="icon-card__icon"><span class="material-symbols-outlined">e911_emergency</span></div><h3>SOS Center</h3><p>Incoming emergency requests and dispatch status.</p></a>
+        <a href="operations.html" class="card card-hover icon-card reveal reveal-3"><div class="icon-card__icon"><span class="material-symbols-outlined">event_note</span></div><h3>Operations Timeline</h3><p>Standard response protocol from alert to recovery.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="flex-between reveal" style="align-items:flex-end;">
+        <div class="section-head" style="margin-bottom:0"><span class="eyebrow">Control Room</span><h2>Recent Announcements</h2></div>
+      </div>
+      <div class="card mt-24" style="padding:8px 28px;" id="announceList"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:var(--white);margin-bottom:14px;"><span class="brand__mark"><span class="material-symbols-outlined">volunteer_activism</span></span><span>DVRCS</span></div>
+        <p>A unified coordination grid for volunteer deployment and disaster relief operations across India, built for rapid, transparent response.</p>
+      </div>
+      <div><h4>Console</h4><ul><li><a href="zones.html">Disaster Zones</a></li><li><a href="resources.html">Resources</a></li><li><a href="dashboard.html">Volunteer Dashboard</a></li><li><a href="sos.html">SOS Center</a></li></ul></div>
+      <div><h4>Program</h4><ul><li><a href="operations.html">Operations Timeline</a></li><li><a href="project-management.html">Roadmap &amp; Sprints</a></li><li><a href="register.html">Volunteer Registration</a></li></ul></div>
+      <div><h4>Emergency Line</h4><ul><li>National Helpline: 1078</li><li>NDRF Control Room: +91-9484956512</li><li>State Disaster Cell: 108</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Disaster Volunteer Registration &amp; Coordination System</span><span>Built for rapid relief coordination</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
