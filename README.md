@@ -8,7 +8,7 @@ The Disaster Volunteer Registration & Coordination System (DDVRCS) helps disaste
 
 The project demonstrates the implementation of Agile Scrum practices using Jira, including Epics, User Stories, Sprint Planning, Timeline, and Reports.
 
----
+----
 
 ## ✨ Features
 
@@ -26,7 +26,7 @@ The project demonstrates the implementation of Agile Scrum practices using Jira,
 - Operations Timeline
 - Mission Progress Tracking
 
----
+----
 
 ## 🛠️ Technologies Used
 
@@ -39,7 +39,7 @@ The project demonstrates the implementation of Agile Scrum practices using Jira,
 - Jira Software
 - Agile Scrum
 
----
+----
 
 ## 📂 Project Structure
 
@@ -53,7 +53,7 @@ DDVRCS/
 └── README.md
 ```
 
----
+----
 
 ## 📊 Agile Project Management
 
@@ -74,7 +74,7 @@ This project was planned and managed using Scrum methodology.
 - Sprint 2 – Resource & SOS Management
 - Sprint 3 – Operations & Agile Management
 
----
+----
 
 ## 📈 Jira Implementation
 
@@ -90,7 +90,7 @@ The project includes:
 - Timeline
 - Project Reports
 
----
+----
 
 ## 🎯 Project Outcomes
 
@@ -98,7 +98,7 @@ The project includes:
 - Designed Jira workflows with Epics and User Stories.
 - Applied Agile Scrum practices including sprint planning, backlog management, and project reporting.
 
----
+----
 
 ## 🚀 How to Run
 
@@ -112,7 +112,7 @@ git clone https://github.com/yourusername/DDVRCS.git
 
 3. Run `index.html` in your browser.
 
----
+----
 
 ## 📸 Screenshots
 
@@ -128,7 +128,7 @@ Add screenshots of:
 - Timeline
 - Reports
 
----
+----
 
 ## 👨‍💻 Developed By
 
@@ -138,7 +138,7 @@ B.Tech Computer Science Engineering
 
 Lovely Professional University
 
----
+----
 
 ## 📄 License
 
